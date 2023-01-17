@@ -1,0 +1,31 @@
+.login--form{
+    display: grid;
+    grid-template-columns:2;
+    grid-template-rows: 5;
+    width: 400px;
+    margin: auto;
+}
+.login--title{
+    grid-column: span 2;
+    justify-self: center;
+}
+.login--emailLabel{
+    justify-self: center;
+  
+}
+.login--emailInput{
+    margin-bottom: 5px;
+}
+.login--passwordLabel{
+    justify-self: center;
+}
+.login--passwordInput{
+    margin-bottom: 5px;
+}
+
+.login--submitBtn{
+    grid-column: span 2;
+}
+.login--signUpText{
+    grid-column: span 2;
+}

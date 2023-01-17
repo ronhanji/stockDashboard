@@ -1,0 +1,36 @@
+.signUp--form{
+    display: grid;
+    width: 400px;
+    margin: auto;
+}
+.signUp--title{
+    grid-column: span 2;
+    justify-self: center;
+}
+.signUp--emailLabel{
+    justify-self: center;
+  
+}
+.signUp--emailInput{
+    margin-bottom: 5px;
+}
+.signUp--passwordLabel{
+    justify-self: center;
+}
+.signUp--passwordInput{
+    margin-bottom: 5px;
+}
+.signUp--passwordConfirmLabel{
+    grid-column: 1;
+    grid-row: 4;
+}
+.signUp--passwordConfirmInput{
+    margin-bottom: 5px;
+}
+.signUp--submitBtn{
+    grid-column: span 2;
+}
+.signUp--loginText{
+    margin-top: 0px;
+    grid-column: span 2;
+}
