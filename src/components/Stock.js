@@ -21,12 +21,12 @@ export default function Stock(props){
 
     return(
         <div className="stock--div">
-            <h1>{props.data.name}</h1>
-            <h2>Ticker: {props.data.ticker}</h2>
-            <h3>Price: {price===0?"FETCHING PRICE":"$"+price}</h3>
-            <button className="stock--deleteBtn" onClick={()=>props.removeItem(props.data.id)}>Remove</button>
-            <button className="stock--setReminderBtn">Set Reminder</button>
-            <button className="stock--refreshBtn" onClick={()=>{setRefreshPriceFlag(prev=>(!prev))}}>Refresh Price</button>
+            <h1 className="stock--name">{props.data.name}</h1>
+            <h2 className="stock--ticker">Ticker: {props.data.ticker}</h2>
+            <h3 className="stock--price">Price: {price===0?"FETCHING PRICE":"$"+price}</h3>
+            <button className="stock--button" onClick={()=>props.removeItem(props.data.id)}>Remove</button>
+            <button className="stock--button">Set Reminder</button>
+            <button className="stock--button" onClick={()=>{setRefreshPriceFlag(prev=>(!prev))}}>Refresh Price</button>
         </div>
     )
 }

@@ -2,6 +2,11 @@
     display: grid;
     width: 400px;
     margin: auto;
+    background-color:rgba(153, 190, 178, 0.432);
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 .signUp--title{
     grid-column: span 2;

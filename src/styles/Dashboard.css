@@ -1,5 +1,17 @@
-.dashboard--div{
+/*.dashboard--div{
     background-color: aqua;
     width:auto;
     height: auto;
 }
+*/
+
+.dashboard--div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light gray background color */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }

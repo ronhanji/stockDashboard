@@ -39,10 +39,15 @@ export default function Dashboard(props){
   
   const items = selectedItems.map((item)=>(<Stock key={item.id} data={item} removeItem={removeItem}/>))
   return(
+    <div>
+      <Searchbar data={data} setData={setData} selectedItems={selectedItems} setSelectedItems={setSelectedItems}/>
+    
       <div className="dashboard--div">
-          <Searchbar data={data} setData={setData} selectedItems={selectedItems} setSelectedItems={setSelectedItems}/>
+          
           {items}
-          <button onClick={logout}>Log Out</button>
+          
       </div>
+      <button className="stock--button" onClick={logout}>Log Out</button>
+    </div>
   )
 }

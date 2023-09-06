@@ -37,7 +37,7 @@ export default function Login() {
             <label className='login--passwordLabel'>Password: </label>
             <input className='login--passwordInput' type="password" onChange={(e)=>setPassword(e.target.value)}></input>
             <input className='login--submitBtn' type="submit" disabled={loading} value="Log In" />
-            <Link to="/forgot-password"><h4>forgot password?</h4></Link>
+            <Link to="/forgot-password"><h4>Forgot Password?</h4></Link>
             <h3 className='login--loginText'>Need an Account? <Link to='/signup'>Sign Up</Link></h3>
             {error!==''&&<h1>{error}</h1>} 
         </form>
