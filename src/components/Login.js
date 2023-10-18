@@ -29,17 +29,35 @@ export default function Login() {
         console.log(currentUser)
       },[])
     return (
-        <form className='login--form' onSubmit={handleSubmit}>
-            <h1 className='login--title'>Log In</h1>
-            
-            <label className='login--emailLabel'>Email: </label>
-            <input type="email" className='login--emailInput' onChange={(e)=>setEmail(e.target.value)}></input>
-            <label className='login--passwordLabel'>Password: </label>
-            <input className='login--passwordInput' type="password" onChange={(e)=>setPassword(e.target.value)}></input>
-            <input className='login--submitBtn' type="submit" disabled={loading} value="Log In" />
-            <Link to="/forgot-password"><h4>Forgot Password?</h4></Link>
-            <h3 className='login--loginText'>Need an Account? <Link to='/signup'>Sign Up</Link></h3>
-            {error!==''&&<h1>{error}</h1>} 
-        </form>
+        <div className='loginPage'>
+            <form className='login--form' onSubmit={handleSubmit}>
+                <h1 className='login--title'>Log In</h1>
+                <div className='input--container'>
+                    <label className='login--emailLabel'>Email: </label>
+                    <input type="email" className='login--emailInput' onChange={(e)=>setEmail(e.target.value)}></input>
+                </div>
+                <div className='input--container'>
+                    <label className='login--passwordLabel'>Password: </label>
+                    <input className='login--passwordInput' type="password" onChange={(e)=>setPassword(e.target.value)}></input>
+                </div>
+                <div className='login--btnContainer'>
+                    <input className='login--submitBtn' type="submit" disabled={loading} value="Log In" />
+                </div>
+                
+                <Link to="/forgot-password">
+                    <div className='login--forgotPasswordDiv'>
+                        <h4 className='login--forgotPasswordText'>Forgot Password?</h4>
+                    </div>
+                </Link>
+                <div className='login--signUpDiv'>
+                    <p className='login--loginText'>Need an Account? 
+                        <Link to='/signup' className='login--signupText'>Sign Up</Link>
+                    </p>
+                </div>
+                
+                {error!==''&&<h1>{error}</h1>} 
+            </form>
+        </div>
+        
     )
 }

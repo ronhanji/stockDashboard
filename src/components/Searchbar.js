@@ -26,7 +26,7 @@ export default function Searchbar(props){
     // the item hovered
     console.log("")
   }
-    
+
   const handleOnSelect = (item) => {
     props.setSelectedItems(prevItem=>prevItem.concat([item]))
     writeData(currentUser.uid,props.selectedItems.concat([item]))

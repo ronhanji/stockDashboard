@@ -41,11 +41,8 @@ export default function Dashboard(props){
   return(
     <div>
       <Searchbar data={data} setData={setData} selectedItems={selectedItems} setSelectedItems={setSelectedItems}/>
-    
       <div className="dashboard--div">
-          
           {items}
-          
       </div>
       <button className="stock--button" onClick={logout}>Log Out</button>
     </div>

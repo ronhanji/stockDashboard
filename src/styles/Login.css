@@ -1,35 +1,87 @@
-.login--form{
-    display: grid;
-    grid-template-columns:2;
-    grid-template-rows: 5;
-    width: 400px;
-    margin: auto;
-    background-color:rgba(153, 190, 178, 0.432);
-    border: 2px solid #ccc;
-    padding: 10px;
-    border-radius: 10px;
-}
-.login--title{
-    grid-column: span 2;
-    justify-self: center;
-}
-.login--emailLabel{
-    justify-self: center;
-  
-}
-.login--emailInput{
-    margin-bottom: 5px;
-}
-.login--passwordLabel{
-    justify-self: center;
-}
-.login--passwordInput{
-    margin-bottom: 5px;
+.loginPage {
+    background-image:url('../images/stock-background.jpg');
+    background-size: 50%
 }
 
-.login--submitBtn{
-    grid-column: span 2;
+.login--form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e74c3c; /* Red border */
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
 }
-.login--signUpText{
-    grid-column: span 2;
+.input--container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input--container label {
+    display: block;
+    font-size: 16px; /* Font size for labels */
+    color: #f39c12; /* Yellow label color */
+}
+  
+.input--container input[type="email"],
+.input--container input[type="password"] {
+    width:95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #3498db; /* Light blue border */
+    border-radius: 5px;
+    font-size: 16px; /* Font size for inputs */
+    background-color: #fff; /* White input background */
+    color: #333; /* Dark text color */
+}
+
+.login--title{
+    font-size: 28px; /* Larger font size for the title */
+    color: #e74c3c; /* Red title color */
+    margin-bottom: 20px;
+}
+
+.login--btnContainer {
+    margin-top: 20px;
+  }
+  
+.login--submitBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Light blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+  
+.login--submitBtn:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
+}
+
+.login--forgotPasswordText {
+    font-size: 16px;
+    color: #f39c12; /* Yellow link color */
+    text-decoration: none;
+}
+.login--signUpDiv {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #2ecc71; /* Green link color */
+}
+  
+.login--signUpText {
+    color: #2ecc71; /* Green link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.login--signUpText:hover {
+    text-decoration: underline;
 }

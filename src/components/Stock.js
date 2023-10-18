@@ -14,7 +14,7 @@ export default function Stock(props){
         }   
         fetch(`https://ms-finance.p.rapidapi.com/market/v2/get-realtime-data?performanceIds=${props.data.performanceId}`, options)
         .then(response => response.json())
-        .then(response => setPrice(response[props.data.performanceId].lastPrice.value))
+        .then(response => setPrice(response[props.data.performanceId].lastPrice.value.toFixed(2)))
         .catch(err => console.error(err));
     },[refreshPriceFlag,props.data.performanceId])
     
