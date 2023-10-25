@@ -1,19 +1,19 @@
 .loginPage {
     background-image:url('../images/stock-background.jpg');
-    background-size: 50%
+    background-size: 50%;
 }
 
 .login--form{
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #e74c3c; /* Red border */
-    border-radius: 8px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    display: grid;
+    width: 400px;
+    margin: auto;
+    background-color:rgba(153, 190, 178, 0.432);
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
     text-align: center;
-    
 }
+
 .input--container {
     text-align: left;
     margin-bottom: 20px;
@@ -71,7 +71,6 @@
     text-decoration: none;
 }
 .login--signUpDiv {
-    margin-top: 20px;
     font-size: 16px;
     color: #2ecc71; /* Green link color */
 }

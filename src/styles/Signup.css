@@ -1,3 +1,8 @@
+.signUp--page{
+    background-image:url('../images/stock-background.jpg');
+    background-size: 50%;
+}
+
 .signUp--form{
     display: grid;
     width: 400px;
@@ -9,33 +14,53 @@
     text-align: center;
 }
 .signUp--title{
-    grid-column: span 2;
-    justify-self: center;
+    font-size: 28px; /* Larger font size for the title */
+    color: #e74c3c; /* Red title color */
 }
-.signUp--emailLabel{
-    justify-self: center;
-  
+.input--container {
+    text-align: left;
+    margin-bottom: 20px;
 }
-.signUp--emailInput{
+
+.input--container input[type="email"],
+.input--container input[type="password"] {
+    width:95%;
+    padding: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
+    border: 1px solid #3498db; /* Light blue border */
+    border-radius: 5px;
+    font-size: 16px; /* Font size for inputs */
+    background-color: #fff; /* White input background */
+    color: #333; /* Dark text color */
 }
-.signUp--passwordLabel{
-    justify-self: center;
+
+.input--container label {
+    display: block;
+    font-size: 16px; /* Font size for labels */
+    color: #f39c12; /* Yellow label color */
 }
-.signUp--passwordInput{
-    margin-bottom: 5px;
+.signUp--btnContainer {
+    margin-top: 20px;
 }
-.signUp--passwordConfirmLabel{
-    grid-column: 1;
-    grid-row: 4;
-}
-.signUp--passwordConfirmInput{
-    margin-bottom: 5px;
-}
+
 .signUp--submitBtn{
-    grid-column: span 2;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Light blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signUp--submitBtn:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
 }
 .signUp--loginText{
     margin-top: 0px;
-    grid-column: span 2;
 }

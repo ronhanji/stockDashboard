@@ -35,8 +35,6 @@ export default function Login() {
                 <div className='input--container'>
                     <label className='login--emailLabel'>Email: </label>
                     <input type="email" className='login--emailInput' onChange={(e)=>setEmail(e.target.value)}></input>
-                </div>
-                <div className='input--container'>
                     <label className='login--passwordLabel'>Password: </label>
                     <input className='login--passwordInput' type="password" onChange={(e)=>setPassword(e.target.value)}></input>
                 </div>

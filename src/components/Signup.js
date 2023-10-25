@@ -28,18 +28,23 @@ export default function Signup() {
     }
 
     return (
-        <form className='signUp--form' onSubmit={handleSubmit}>
-            <h1 className='signUp--title'>Sign Up</h1>
-            
-            <label className='signUp--emailLabel'>Email: </label>
-            <input type="email" className='signUp--emailInput' onChange={(e)=>setEmail(e.target.value)}></input>
-            <label className='signUp--passwordLabel'>Password: </label>
-            <input className='signUp--passwordInput' type="password" onChange={(e)=>setPassword(e.target.value)}></input>
-            <label className='signUp--passwordConfirmLabel'>Password Confirmation: </label>
-            <input className='signUp--passwordConfirmInput' type="password" onChange={(e)=>setPasswordConfirm(e.target.value)}></input>
-            <input className='signUp--submitBtn' type="submit" disabled={loading} value="Submit" />
-            <h3 className='signUp--loginText'>Already Have an Account? <Link to='/login'>Log In</Link></h3>
-            {error!==''&&<h1>{error}</h1>}
-        </form>
+        <div className='signUp--page'>
+            <form className='signUp--form' onSubmit={handleSubmit}>
+                <h1 className='signUp--title'>Sign Up</h1>
+                <div className='input--container'>
+                    <label className='signUp--emailLabel'>Email: </label>
+                    <input type="email" className='signUp--emailInput' onChange={(e)=>setEmail(e.target.value)}></input>
+                    <label className='signUp--passwordLabel'>Password: </label>
+                    <input className='signUp--passwordInput' type="password" onChange={(e)=>setPassword(e.target.value)}></input>
+                    <label className='signUp--passwordConfirmLabel'>Password Confirmation: </label>
+                    <input className='signUp--passwordConfirmInput' type="password" onChange={(e)=>setPasswordConfirm(e.target.value)}></input>
+                </div>
+                <div className="signUp--btnContainer">
+                    <input className='signUp--submitBtn' type="submit" disabled={loading} value="Submit" />
+                </div>
+                <h3 className='signUp--loginText'>Already Have an Account? <Link to='/login'>Log In</Link></h3>
+                {error!==''&&<h1>{error}</h1>}
+            </form>
+        </div>
     )
 }
