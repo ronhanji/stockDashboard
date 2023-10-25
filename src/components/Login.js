@@ -49,7 +49,7 @@ export default function Login() {
                 </Link>
                 <div className='login--signUpDiv'>
                     <p className='login--loginText'>Need an Account? 
-                        <Link to='/signup' className='login--signupText'>Sign Up</Link>
+                        <Link to='/signup' className='login--signUpText'>Sign Up</Link>
                     </p>
                 </div>
                 
