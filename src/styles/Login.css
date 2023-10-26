@@ -5,7 +5,7 @@
 
 .login--form{
     display: grid;
-    width: 400px;
+    width: 33%;
     margin: auto;
     background-color:rgba(153, 190, 178, 0.432);
     border: 2px solid #ccc;
@@ -14,19 +14,18 @@
     text-align: center;
 }
 
-.input--container {
+.login--inputContainer {
     text-align: left;
     margin-bottom: 20px;
 }
 
-.input--container label {
+.login--inputContainer label {
     display: block;
     font-size: 16px; /* Font size for labels */
     color: #f39c12; /* Yellow label color */
 }
   
-.input--container input[type="email"],
-.input--container input[type="password"] {
+.login--inputContainer input {
     width:95%;
     padding: 10px;
     margin-top: 5px;
@@ -71,7 +70,7 @@
     text-decoration: none;
 }
 .login--signUpDiv {
-    font-size: 16px;
+    font-size: 20px;
     color: #2ecc71; /* Green link color */
 }
   
@@ -83,4 +82,5 @@
   
 .login--signUpText:hover {
     text-decoration: underline;
+    color:#f39c12;
 }

@@ -31,7 +31,7 @@ export default function Signup() {
         <div className='signUp--page'>
             <form className='signUp--form' onSubmit={handleSubmit}>
                 <h1 className='signUp--title'>Sign Up</h1>
-                <div className='input--container'>
+                <div className='signUp--inputContainer'>
                     <label className='signUp--emailLabel'>Email: </label>
                     <input type="email" className='signUp--emailInput' onChange={(e)=>setEmail(e.target.value)}></input>
                     <label className='signUp--passwordLabel'>Password: </label>
@@ -42,7 +42,11 @@ export default function Signup() {
                 <div className="signUp--btnContainer">
                     <input className='signUp--submitBtn' type="submit" disabled={loading} value="Submit" />
                 </div>
-                <h3 className='signUp--loginText'>Already Have an Account? <Link to='/login'>Log In</Link></h3>
+                <div className='signUp--loginDiv'>
+                    <p className='signUp--accountQuestion'>Need an Account?&nbsp;
+                        <Link to='/login' className='signUp--loginText'>Login</Link>
+                    </p>
+                </div>
                 {error!==''&&<h1>{error}</h1>}
             </form>
         </div>

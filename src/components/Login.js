@@ -32,7 +32,7 @@ export default function Login() {
         <div className='loginPage'>
             <form className='login--form' onSubmit={handleSubmit}>
                 <h1 className='login--title'>Log In</h1>
-                <div className='input--container'>
+                <div className='login--inputContainer'>
                     <label className='login--emailLabel'>Email: </label>
                     <input type="email" className='login--emailInput' onChange={(e)=>setEmail(e.target.value)}></input>
                     <label className='login--passwordLabel'>Password: </label>
@@ -48,7 +48,7 @@ export default function Login() {
                     </div>
                 </Link>
                 <div className='login--signUpDiv'>
-                    <p className='login--loginText'>Need an Account? 
+                    <p className='login--loginText'>Need an Account?&nbsp;
                         <Link to='/signup' className='login--signUpText'>Sign Up</Link>
                     </p>
                 </div>

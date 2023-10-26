@@ -5,7 +5,7 @@
 
 .signUp--form{
     display: grid;
-    width: 400px;
+    width: 33%;
     margin: auto;
     background-color:rgba(153, 190, 178, 0.432);
     border: 2px solid #ccc;
@@ -17,13 +17,12 @@
     font-size: 28px; /* Larger font size for the title */
     color: #e74c3c; /* Red title color */
 }
-.input--container {
+.signUp--inputContainer {
     text-align: left;
     margin-bottom: 20px;
 }
 
-.input--container input[type="email"],
-.input--container input[type="password"] {
+.signUp--inputContainer input {
     width:95%;
     padding: 10px;
     margin-top: 5px;
@@ -35,7 +34,7 @@
     color: #333; /* Dark text color */
 }
 
-.input--container label {
+.signUp--inputContainer label {
     display: block;
     font-size: 16px; /* Font size for labels */
     color: #f39c12; /* Yellow label color */
@@ -61,6 +60,18 @@
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
 }
-.signUp--loginText{
-    margin-top: 0px;
+.signUp--loginDiv {
+    font-size: 20px;
+    color: #2ecc71; /* Green link color */
+}
+  
+.signUp--loginText {
+    color: #2ecc71; /* Green link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signUp--loginText:hover {
+    text-decoration: underline;
+    color:#f39c12;
 }
